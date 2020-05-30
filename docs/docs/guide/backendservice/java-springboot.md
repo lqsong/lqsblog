@@ -239,6 +239,7 @@ lqsblog:
 ```sh
 # 但是此命令，如果关闭命令窗口，服务也会关闭
 java -jar lqsblog-api-1.0-SNAPSHOT.jar
+# 若：`lqsblog-api-1.0-SNAPSHOT.jar` 与 `application-local.yml` 不在同一目录：可执行： java -jar lqsblog-api-1.0-SNAPSHOT.jar --spring.config.location=/val/usr/application-local.yml
 
 # or
 
