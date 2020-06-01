@@ -23,7 +23,7 @@
   - 后台菜单
   - 后台API
   - 站点配置
-# 二、webs 模块,自己自定义扩展
+# 二、webs 模块,在lqsblog-webs模块中自己自定义扩展
 ```
 
 ## 技术选型
@@ -39,24 +39,9 @@
 - api风格：restful
 - 模板引擎：thymeleaf
 
-
-
-## 目录结构
-
-本项目已经为你生成了一个完整的开发框架，下面是整个项目的目录结构。
-
-```bash
-├── lqsblog-api                            # api服务
-│   │── cc.liqingsong.api.admin            # admin后台api接口
-│   └── cc.liqingsong.api.pc               # pc前台api接口
-├── lqsblog-api-common                     # api服务公共
-├── lqsblog-common                         # 项目公共
-├── lqsblog-database                       # 项目数据库(实体类、DTO、VO)
-├── lqsblog-service                        # 项目服务类
-├── lqsblog-webs                           # jsp Web PC前台
-├── lqsblog-webs-common                    # jsp Web 公共
-└── pom.xml                                # maven 配置文件
-```
+:::tip
+注：idea 必须安装 `Lombok` 插件，如果不知道怎么安装，安装方法，自己可以百度或谷歌。
+:::
 
 ## 基础环境
 
@@ -65,9 +50,42 @@
 - maven3.6 +
 - Idea 安装 lombok 设置动态编译
 
+
+
+## 目录结构
+
+本项目已经为你生成了一个完整的开发框架，下面是整个项目的目录结构。
+
+```bash
+├── lqsblog-api                            # api服务模块
+│   │── src.main.java
+│   │   │── cc.liqingsong.api.admin        # admin后台api接口
+│   │   │── cc.liqingsong.api.pc           # pc前台api接口
+│   │   └── ApiApplication.java            # SpingBoot 运行程序
+│   └── src.main.resources
+│       └── application.yml                # SpingBoot 配置文件
+├── lqsblog-api-common                     # api服务公共
+├── lqsblog-common                         # 项目公共
+├── lqsblog-database                       # 项目数据库层模块(实体类、DTO、VO)
+├── lqsblog-service                        # 项目服务层模块
+├── lqsblog-webs                           # jsp Web PC前台
+│   │── src.main.java
+│   │   │── cc.liqingsong.api.webs         # pc前台 实现模板数据输出
+│   │   └── WebsApplication.java           # SpingBoot 运行程序
+│   └── src.main.resources
+│       │── templates                      # pc前台（thymeleaf）模板
+│       └── application.yml                # SpingBoot 配置文件
+├── lqsblog-webs-common                    # jsp Web 公共
+└── pom.xml                                # maven 配置文件
+```
+:::tip
+- `SpingBoot` 运行程序有两份，分别位于 `lqsblog-api`模块下的`ApiApplication.java`、`lqsblog-webs`模块下的`WebsApplication.java`，对应的分别是`api服务`和`Web PC前台`。
+- 本项目只做了`API`开发，与其他前端模块[前端前台](/guide/frontdesk/nuxtjs.md)、[前端后台](/guide/frontbg/vue.md)进行配合应用，如果你需要java版的PC端你可以自行在`lqsblog-webs`模块扩展开发。
+:::
+
 ## 配置
 
-> 本项目基于springboot框架开发，主体配置请参考[springboot官方文档](https://spring.io/projects/spring-boot)，以下只做扩展内容的说明：
+> 本项目基于springboot框架开发，主体配置参数说明请参考[SpringBoot官方文档](https://spring.io/projects/spring-boot)，以下只做扩展内容的说明：
 
 ```sh
 # lqsblog-api 下  application.yml
@@ -84,7 +102,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/lqsblog?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
     username: root
-    password: rot
+    password: root
   mvc:
     # 启用 Not Found
     throw-exception-if-no-handler-found: true
@@ -151,13 +169,13 @@ lqsblog:
 ```
 
 :::tip
-lqsblog 下的配置为自定义配置，其他配置请参照 [springboot官方文档](https://spring.io/projects/spring-boot)。
+配置文件中 `lqsblog` 参数下的配置为自定义配置，其他配置请参照 [springboot官方文档](https://spring.io/projects/spring-boot)。
 这里有以下几点需要注意：
-1、 `spring.mvc.static-path-pattern` 必须配置。
-2、 针对上次文件，`lqsblog.file.upload-weburl` 与 `lqsblog.weburl`，必须配置一个；如果两者都配置则 `lqsblog.file.upload-weburl` 优先级高。
-3、 lqsblog-api.admin 会话管理基于 `JWT`，所以 `lqsblog.jwt` 必须配置，并且失效时间不要配置太大，因为系统会自动刷新jwt（只要用户是一直后台操作），当然也不要配置太小jwt容易过期。
-4、.gitignore 过滤了`application-*.yml`，所以开发是`application-*.yml`命名规则的文件不好提交到git，方便开发。
-5、`spring.profiles.active` 激活环境配置是`local`，也就是说 `application-local.yml` 级别比 `application.yml` 高。
+- 1、 `spring.mvc.static-path-pattern` 必须配置。
+- 2、 针对上面文件内容，`lqsblog.file.upload-weburl` 与 `lqsblog.weburl`，必须配置一个；如果两者都配置则 `lqsblog.file.upload-weburl` 优先级高。
+- 3、 lqsblog-api 模块下的 admin api接口会话管理基于 `JWT`，所以 `lqsblog.jwt` 必须配置，并且失效时间不要配置太大，因为系统会自动刷新jwt（只要用户是一直后台操作），当然也不要配置太小jwt容易过期。
+- 4、.gitignore 过滤了`application-*.yml`，所以开发时`application-*.yml`命名规则的文件不会提交到git，方便开发。
+- 5、`spring.profiles.active` 激活环境配置是`local`，也就是说 `application-local.yml` 级别比 `application.yml` 高。
 :::
 
 
@@ -171,7 +189,7 @@ git clone https://github.com/lqsong/lqsblog-backend-java-springboot.git
 https://github.com/lqsong/lqsblog/blob/master/database/lqsblog-backend-java-springboot.sql
 
 # 配置lqsblog-api 下  application.yml 数据库、端口、网址等参数
-# idea 导入 允许程序，进行开发
+# idea 导入 运行程序，进行开发
 run ApiApplication
 ```
 :::tip
@@ -249,9 +267,44 @@ nohup java -jar lqsblog-api-1.0-SNAPSHOT.jar &
 # 当用 nohup 命令执行作业时，缺省情况下该作业的所有输出被重定向到nohup.out的文件中
 # 除非另外指定了输出文件，如：$ nohup java -jar test.jar >temp.txt & ，这种方法会把日志文件输入到你指定的文件中，没有则会自动创建
 
-# jobs 命令：会列出所有后台执行的作业，并且每个作业前面都有个编号
+```
+
+> 其他命令:
+
+``` sh
+
+# 查看日志（动态显示）
+$ tail -f output.log
+
+# 查看日志（一次性显示整个文件）
+$ cat output.log
+
+# jobs命令只看当前终端生效的，关闭终端后，在另一个终端jobs已经无法看到后台跑得程序了，此时利用ps（进程查看命令）
+$ jobs 
+
+# ps 命令用于查看当前正在运行的进程。
+# 所有进程
+ps -ef
+ps -aux
+# a:显示所有程序 
+# u:以用户为主的格式来显示 
+# x:显示所有程序，不以终端机来区分
+
+# grep 是搜索
+# 查看所有进程里 是 java 的进程信息
+ps -ef | grep java
+ps -aux | grep java
+
+# 查看使用某端口的进程
+lsof -i:8080
+
+# 杀死进程
+sudo kill 进程号
+
+kill -9 进程号 #绝杀
 
 ```
+
 
 然后你api网址就是 `IP:端口` 。
 

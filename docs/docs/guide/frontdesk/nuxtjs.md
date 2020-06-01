@@ -175,7 +175,7 @@ npm run build
 npm install
 ```
 
-##### 3、如果有需要你可以修改配置[nuxt.config.js]（端口）
+##### 3、如果有需要你可以修改配置[nuxt.config.js]（端口）、[.env]（请求api地址）
 
 ```js
 // nuxt.config.js
@@ -185,6 +185,11 @@ module.exports = {
     host: '0.0.0.0'
   }
 }
+```
+```sh
+# .env
+# 接口地址
+APP_API_HOST=http://rap2.taobao.org:38080/app/mock/247994/pc
 ```
 
 ##### 4、渲染应用部署
