@@ -1,6 +1,6 @@
 module.exports = {
-    title: 'lqsBlog',
-    description: 'Li qingsong\'s blog',
+    title: 'lqsBlog 开发文档',
+    description: 'Li qingsong\'s blog 开发文档',
     dest: './dist',
     port: '8080',
     head: [

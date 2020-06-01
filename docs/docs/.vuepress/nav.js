@@ -3,6 +3,9 @@ module.exports = [
         text: '指南', link: '/guide/'
     },
     {
+        text: 'API文档', link: '/apidocs/'
+    },
+    {
         text: '捐赠', link: '/donate/'
     },
     {
