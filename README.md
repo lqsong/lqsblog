@@ -28,7 +28,7 @@
 
 - lqsblog-frontend-admin-vue： [Github](https://github.com/lqsong/lqsblog-frontend-admin-vue) [Gitee](https://gitee.com/lqsong/lqsblog-frontend-admin-vue)
 
-- lqsblog-frontend-ant-design-pro： [Github](https://github.com/lqsong/lqsblog-frontend-ant-design-pro) [Gitee](https://gitee.com/lqsong/lqsblog-frontend-ant-design-pro)
+- lqsblog-frontend-ant-design-pro-react： [Github](https://github.com/lqsong/lqsblog-frontend-ant-design-pro-react) [Gitee](https://gitee.com/lqsong/lqsblog-frontend-ant-design-pro-react)
 
 ## 后端服务
 
