@@ -21,7 +21,8 @@ module.exports = [
           collapsable: false,
           children:[
             '/guide/frontbg/vue',
-            '/guide/frontbg/react',
+            /* '/guide/frontbg/react', */
+            '/guide/frontbg/andtr.md',
           ]
         },
         {

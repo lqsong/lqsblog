@@ -39,6 +39,13 @@ module.exports = [
                 ]
             },
             {
+                text: 'lqsblog-frontend-ant-design-pro-react',
+                items: [
+                    {text: 'Github', link: 'https://github.com/lqsong/lqsblog-frontend-ant-design-pro-react'},
+                    {text: 'Gitee', link: 'https://gitee.com/lqsong/lqsblog-frontend-ant-design-pro-react'},
+                ]
+            },
+            {
                 text: 'lqsblog-backend-java-springboot',
                 items: [
                     {text: 'Github', link: 'https://github.com/lqsong/lqsblog-backend-java-springboot'},
