@@ -18,7 +18,7 @@
 
 ## Contribution
 
-本文档项目地址 [lqsblog-docs](https://github.com/lqsong/lqsblog/docs) 基于 [vuepress](https://github.com/vuejs/vuepress)开发。
+本文档项目地址 [lqsblog-docs](https://github.com/lqsong/lqsblog/tree/master/docs) 基于 [vuepress](https://github.com/vuejs/vuepress)开发。
 
 有任何修改和建议都可以该项目 pr 和 issue
 
@@ -26,7 +26,7 @@
 
 ## 捐赠
 
-如果你觉得这个项目帮助到了你，你可以请作者喝咖啡表示鼓励.
+如果你觉得这个项目帮助到了你，请帮助 Star，你也可以请作者喝咖啡表示鼓励 :coffee:
 
 **ALIPAY**             |  **WECHAT**
 :-------------------------:|:-------------------------:
