@@ -173,7 +173,7 @@ INSERT INTO `lqs_link_category` (`id`, `name`, `alias`, `sort`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `lqs_search` (
-  `sid` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '主键id',
+  `sid` char(36) NOT NULL COMMENT '主键id',
   `id` bigint(20) NOT NULL COMMENT '文章或作品id',
   `type` smallint(6) NOT NULL DEFAULT '0' COMMENT '\r\n类型 1 文章 2 作品',
   `category_id` bigint(20) NOT NULL DEFAULT '0' COMMENT '分类最后一级ID',
