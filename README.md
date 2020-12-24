@@ -6,7 +6,7 @@
 
 > 多语言版本
 
-- 前端前台(Nuxt、Next、uni-app)、前端后台(Vue、React)、后端服务(JAVA、PHP)。
+- 前端前台(Nuxt、Next、uni-app)、前端后台(Vue、React)、后端服务(JAVA、PHP、Node.js)。
 
 > 技术栈应用
 
@@ -33,6 +33,8 @@
 ## 后端服务
 
 - lqsblog-backend-java-springboot： [Github](https://github.com/lqsong/lqsblog-backend-java-springboot) [Gitee](https://gitee.com/lqsong/lqsblog-backend-java-springboot)
+
+- lqsblog-backend-nodejs-eggjs： [Github](https://github.com/lqsong/lqsblog-backend-nodejs-eggjs) [Gitee](https://gitee.com/lqsong/lqsblog-backend-nodejs-eggjs)
 
 
 
