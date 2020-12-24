@@ -53,6 +53,13 @@ module.exports = [
                     {text: 'Github', link: 'https://github.com/lqsong/lqsblog-backend-java-springboot'},
                     {text: 'Gitee', link: 'https://gitee.com/lqsong/lqsblog-backend-java-springboot'},
                 ]
+            },
+            {
+                text: 'lqsblog-backend-nodejs-eggjs',
+                items: [
+                    {text: 'Github', link: 'https://github.com/lqsong/lqsblog-backend-nodejs-eggjs'},
+                    {text: 'Gitee', link: 'https://gitee.com/lqsong/lqsblog-backend-nodejs-eggjs'},
+                ]
             }
         ]
     },

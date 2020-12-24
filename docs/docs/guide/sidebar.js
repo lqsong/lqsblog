@@ -30,6 +30,7 @@ module.exports = [
           collapsable: false,
           children:[
             '/guide/backendservice/java-springboot',
+            '/guide/backendservice/nodejs-eggjs',
             '/guide/backendservice/php-laravel',
           ]
         }
