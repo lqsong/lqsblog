@@ -85,13 +85,13 @@ npm run dev
 启动完成后会，打开浏览器访问 [http://localhost:3000](http://localhost:3000)，接下来你可以修改代码进行业务开发了。
 
 :::tip
-本项目基于 nuxtjs 搭建，具体开发文档，您可以参考 [nutxjs官方文档](https://zh.nuxtjs.org/guide/configuration).
+本项目基于 nuxtjs 搭建，具体开发文档，您可以参考 [nuxtjs官方文档](https://zh.nuxtjs.org/guide/configuration).
 :::
 
 
 ## 配置
 
-> 配置主体内容你可以参考 [nutxjs官方文档](https://zh.nuxtjs.org/guide/configuration)。以下只做扩展内容的说明：
+> 配置主体内容你可以参考 [nuxtjs官方文档](https://zh.nuxtjs.org/guide/configuration)。以下只做扩展内容的说明：
 
 ```js
 /**
