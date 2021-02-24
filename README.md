@@ -24,6 +24,8 @@
 
 - lqsblog-frontend-nuxt： [Github](https://github.com/lqsong/lqsblog-frontend-nuxt) [Gitee](https://gitee.com/lqsong/lqsblog-frontend-nuxt)
 
+- lqsblog-frontend-nextjs： [Github](https://github.com/lqsong/lqsblog-frontend-nextjs) [Gitee](https://gitee.com/lqsong/lqsblog-frontend-nextjs)
+
 - lqsblog-frontend-uniapp： [Github](https://github.com/lqsong/lqsblog-frontend-uniapp) [Gitee](https://gitee.com/lqsong/lqsblog-frontend-uniapp)
 
 ## 前端后台
