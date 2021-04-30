@@ -88,6 +88,13 @@ module.exports = [
                     {text: 'Github', link: 'https://github.com/lqsong/lqsblog-backend-nodejs-eggjs'},
                     {text: 'Gitee', link: 'https://gitee.com/lqsong/lqsblog-backend-nodejs-eggjs'},
                 ]
+            },
+            {
+                text: 'lqsblog-backend-php-thinkphp',
+                items: [
+                    {text: 'Github', link: 'https://github.com/lqsong/lqsblog-backend-php-thinkphp'},
+                    {text: 'Gitee', link: 'https://gitee.com/lqsong/lqsblog-backend-php-thinkphp'},
+                ]
             }
         ]
     },

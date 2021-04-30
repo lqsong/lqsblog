@@ -40,7 +40,7 @@
 
 - lqsblog-backend-nodejs-eggjs： [Github](https://github.com/lqsong/lqsblog-backend-nodejs-eggjs) [Gitee](https://gitee.com/lqsong/lqsblog-backend-nodejs-eggjs)
 
-
+- lqsblog-backend-php-thinkphp： [Github](https://github.com/lqsong/lqsblog-backend-php-thinkphp) [Gitee](https://gitee.com/lqsong/lqsblog-backend-php-thinkphp)
 
 
 

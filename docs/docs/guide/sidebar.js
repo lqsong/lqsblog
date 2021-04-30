@@ -31,7 +31,7 @@ module.exports = [
           children:[
             '/guide/backendservice/java-springboot',
             '/guide/backendservice/nodejs-eggjs',
-            '/guide/backendservice/php-laravel',
+            '/guide/backendservice/php-thinkphp',
           ]
         }
 ]
