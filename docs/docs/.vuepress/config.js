@@ -5,7 +5,8 @@ module.exports = {
     port: '8080',
     head: [
         ['link', {rel: 'icon', href: '/favicon.ico'}],
-        ['script', {type: 'text/javascript', src: 'https://s9.cnzz.com/z_stat.php?id=1278949746&web_id=1278949746'}]
+        ['script', {type: 'text/javascript', src: 'https://hm.baidu.com/hm.js?7680f7c0625c4f8213793fb35c2c084e'}]
+        /* ['script', {type: 'text/javascript', src: 'https://s9.cnzz.com/z_stat.php?id=1278949746&web_id=1278949746'}] */
     ],
     markdown: {
         lineNumbers: true
