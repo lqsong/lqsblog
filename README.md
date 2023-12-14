@@ -22,6 +22,8 @@
 
 ## 前端前台
 
+- lqsblog-frontend-midway-vue3-ssr： [Github](https://github.com/lqsong/lqsblog-frontend-midway-vue3-ssr) [Gitee](https://gitee.com/lqsong/lqsblog-frontend-midway-vue3-ssr)
+
 - lqsblog-frontend-nuxt： [Github](https://github.com/lqsong/lqsblog-frontend-nuxt) [Gitee](https://gitee.com/lqsong/lqsblog-frontend-nuxt)
 
 - lqsblog-frontend-nextjs： [Github](https://github.com/lqsong/lqsblog-frontend-nextjs) [Gitee](https://gitee.com/lqsong/lqsblog-frontend-nextjs)

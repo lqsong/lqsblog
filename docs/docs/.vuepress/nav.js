@@ -24,6 +24,13 @@ module.exports = [
                 ]
             },
             {
+                text: '前台前端SSR解决方案列表', 
+                items: [
+                    {text: 'midway-vue3-ssr', link: 'http://midway-vue3-ssr.liqingsong.cc'},
+                    {text: 'midway-react-ssr',link: 'http://midway-react-ssr.liqingsong.cc'},
+                ]
+            },
+            {
                 text: '前台模板前端模块化方案',
                 items: [
                     {text: 'webpack-website', link: 'http://webpack-website.liqingsong.cc'},
@@ -39,6 +46,13 @@ module.exports = [
                 items: [
                     {text: 'Github', link: 'https://github.com/lqsong/lqsblog'},
                     {text: 'Gitee', link: 'https://gitee.com/lqsong/lqsblog'},
+                ]
+            },
+            {
+                text: 'lqsblog-frontend-midway-vue3-ssr',
+                items: [
+                    {text: 'Github', link: 'https://github.com/lqsong/lqsblog-frontend-midway-vue3-ssr'},
+                    {text: 'Gitee', link: 'https://gitee.com/lqsong/lqsblog-frontend-midway-vue3-ssr'},
                 ]
             },
             {

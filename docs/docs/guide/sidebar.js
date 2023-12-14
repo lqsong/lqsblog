@@ -11,6 +11,7 @@ module.exports = [
           title:'前端前台',
           collapsable: false,
           children:[
+            '/guide/frontdesk/midway-vue3-ssr', 
             '/guide/frontdesk/nuxtjs',            
             '/guide/frontdesk/nextjs',            
             '/guide/frontdesk/uniapp',            
